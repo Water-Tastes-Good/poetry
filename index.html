@@ -92,16 +92,40 @@
 
     </table>
 
-    
-    <form actions='http://www/example.com/form.php' method='get'>
-        <fieldset>
-            <legend>Register your interest</legend>
-            <p><label class='title' for='name'>Your name:</label>
-            
-            </p>
-            <input type="text" name='name' id='name'><br />
-        </fieldset>
-        
+    <div class="testbox">
+        <form action="/">
+          <h1>Register Your Interest</h1>
+          <h4>Name<span>*</span></h4>
+          <div class="title-block">
+     
+            <input class="name" type="text" name="name" placeholder="First" />
+            <input class="name" type="text" name="name" placeholder="Last" />
+          </div>
+
+          <h4>Email Address<span>*</span></h4>
+          <input type="text" name="name" />
+          
+          <h4>Location<span>*</span></h4>
+          <select>
+            <option value="">- N/A -</option>
+            <option value="">New York</option>
+            <option value="2">Chicago</option>
+            <option value="3">San Francisco</option>
+          </select>
+          <h4>Are you a member?<span>*</span></h4>
+          <select>
+            <option value=""></option>
+            <option value="1">Yes</option>
+            <option value="2">No</option>
+  
+          </select>
+          
+         
+
+          <div class="btn-block">
+            <button type="submit" href="/">Send</button>
+          </div>
+      </div>
 
     </form>
 </body>
