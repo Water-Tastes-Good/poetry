@@ -6,7 +6,6 @@
 
     <meta charset="utf-8">
     <link rel="stylesheet" href="styles.css">
-    
 </head>
 
 <body>
@@ -27,7 +26,7 @@
     </div>
 
 
-    <table>
+    <table align=center >
         <tr>
             <th>‎‎‎‎‎‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎</th>
 
@@ -92,40 +91,27 @@
 
     </table>
 
-    <div class="testbox">
-        <form action="/">
-          <h1>Register Your Interest</h1>
-          <h4>Name<span>*</span></h4>
-          <div class="title-block">
-     
-            <input class="name" type="text" name="name" placeholder="First" />
-            <input class="name" type="text" name="name" placeholder="Last" />
-          </div>
-
-          <h4>Email Address<span>*</span></h4>
-          <input type="text" name="name" />
-          
-          <h4>Location<span>*</span></h4>
-          <select>
-            <option value="">- N/A -</option>
-            <option value="">New York</option>
-            <option value="2">Chicago</option>
-            <option value="3">San Francisco</option>
-          </select>
-          <h4>Are you a member?<span>*</span></h4>
-          <select>
-            <option value=""></option>
-            <option value="1">Yes</option>
-            <option value="2">No</option>
-  
-          </select>
-          
-         
-
-          <div class="btn-block">
-            <button type="submit" href="/">Send</button>
-          </div>
-      </div>
+    
+    <form action="http://www.example.com/form.php" method="get" target='blank_''>
+        <fieldset>
+            <h2>Register your interest</h2>
+        <p><label class="title" for="name">Your name: </label>
+        <input type="text" name="name" id="name"><br />
+        <label class="title" for="email">Your email: </label>
+        <input type="text" name="email" id="email"></p>
+        <p><label for="location" class="title">Closet center:</label>
+        <select name="location" id="location">
+        <option value="ny">New York</option>
+        <option value="il">Chicago</option>
+        <option value="ca">San Francisco</option>
+        </select></p>
+        <span class="title">Are you a member?</span>
+        <label><input type="radio" name="member" value="yes" /> Yes</label>
+        <label><input type="radio" name="member" value="no" /> No</label>
+        <div class="submit"><input type="submit" value="Register" /></div>
+        </fieldset>
+        
+        
 
     </form>
 </body>
