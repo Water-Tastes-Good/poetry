@@ -11,7 +11,7 @@ h1{
 body{
     font-family: VV;
     font-size: 120%;
-    background-image: url(pixel-art-gif.gif);
+    background-image: url(external/pixel-art-gif.gif);
     background-repeat: no-repeat;
     background-size: cover;
     color: rgb(255, 255, 255);
@@ -31,6 +31,10 @@ p, li{
 li{
     text-align: center;
     margin: auto;
+    list-style-position: inside;
+
+    color: rgb(48, 45, 45);
+    font-size: 100%;
 }
 
 tr:nth-child(even) {background-color: #ffffff00;}
@@ -69,7 +73,7 @@ th, td {
  
 
 form {
-    box-shadow:4px -1px 4px rgb(58, 184, 64);
+    box-shadow:-1px -1px 20px rgb(58, 184, 64);
     background-color: rgba(35, 161, 92, 0.52);
 
     border-style: solid;
